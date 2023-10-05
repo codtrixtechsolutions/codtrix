@@ -129,7 +129,10 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
-
+.icon contact-icon{
+  height: 0.75rem;
+  width: 0.75rem;
+}
 .menu-links a {
   display: block;
   padding: 10px;

@@ -85,7 +85,7 @@ a:hover {
 
 
 .all-stuff{
-  color: aliceblue;
+  color: black;
 }
 
 .logo:hover {
@@ -223,7 +223,15 @@ section {
 .title {
   font-size:4rem ;
   text-align: center;
-  color: black;
+  color: aliceblue;
+
+}
+
+.imgset{
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 15rem;
 }
 
 #socials-container {
@@ -321,6 +329,8 @@ section {
 }
 
 .details-container {
+  /* width: 150px;
+  height: 150px; */
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -398,6 +408,17 @@ article .icon {
   width: 90%;
   height: 90%;
 }
+/* .profile-img {
+  border-radius: 20rem;
+  width: 50%;
+  height: 50%;
+} */
+/* .profile{
+  border-radius: 20rem;
+  width: 50%;
+  height: 50%;
+} */
+
 
 .project-title {
   margin: 1rem;
@@ -459,3 +480,6 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+

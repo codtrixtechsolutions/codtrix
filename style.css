@@ -108,7 +108,8 @@ a:hover {
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  
   height: 24px;
   width: 30px;
   cursor: pointer;
@@ -210,6 +211,7 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  justify-content: center;
 }
 
 .section__text p {
@@ -237,6 +239,13 @@ section {
   width: 12rem;
   height: 12rem;
   border-radius: 15rem;
+}
+
+.imgset1{
+  object-fit: cover;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 2rem;
 }
 
 #socials-container {
@@ -335,7 +344,48 @@ section {
 
 .details-container {
   /* width: 150px;
-  height: 150px; */
+  height: 450px; */
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  padding-bottom: 2rem;
+  
+}
+.details-container3 {
+  width: 150px;
+  height: 300px;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  padding-bottom: 2rem;
+  
+}
+
+.details-container2 {
+  /* width: 150px;
+  height: 450px; */
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  padding-bottom: 2rem;
+  
+}
+
+.details-container4 {
+  width: 150px;
+  height: 150px;
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -505,3 +555,13 @@ footer p {
   }
 
 }
+
+
+@media only screen and (max-width: 600px) {
+  .section__text {
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+

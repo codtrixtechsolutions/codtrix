@@ -1,567 +1,602 @@
-/* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  /* background-image: url('https://tse3.mm.bing.net/th?id=OIP.OU4_3cXgnG28Xu3o0zTFiAHaE8&pid=Api&P=0&h=180'); */
-  color: aliceblue;
-  background-color: #111;
-  
-}
-
-.main-div{
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  height: 100vh;
-  width: 100vw;
-
-  overflow: hidden;
-}
-
-
-.main-img{
-  object-fit: cover;
-  width: 100%;
-
-
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-p {
-  color: rgb(85, 85, 85);
-}
-
-/* TRANSITION */
-
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-/* DESKTOP NAV */
-
-nav,
-.nav-links {
-  display: flex;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
-
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1rem;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  text-decoration-color: blue;
-}
-
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color:blue;
-}
-
-.logo {
-  font-size: 2rem;
-}
-
-
-.all-stuff{
-  color: black;
-}
-
-.logo:hover {
-  cursor: pointer;
-}
-
-/* HAMBURGER MENU */
-
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-}
-.icon contact-icon{
-  height: 0.75rem;
-  width: 0.75rem;
-}
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-/* SECTIONS */
-
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
-}
-
-/* PROFILE SECTION */
-
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
-
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-.section__text {
-  align-self: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.section__text p {
-  font-weight: 600;
-}
-
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-size:4rem ;
-  text-align: center;
-  color: aliceblue;
-
-}
-
-.imgset{
-  object-fit: cover;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 15rem;
-}
-
-.imgset1{
-  object-fit: cover;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 2rem;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-/* ICONS */
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
-
-/* BUTTONS */
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
-}
-
-/* ABOUT SECTION */
-
-#about {
-  position: relative;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  /* width: 150px;
-  height: 450px; */
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  padding-bottom: 2rem;
-  
-}
-.details-container3 {
-  width: 150px;
-  height: 300px;
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  padding-bottom: 2rem;
-  
-}
-
-.details-container2 {
-  /* width: 150px;
-  height: 450px; */
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  padding-bottom: 2rem;
-  
-}
-
-.details-container4 {
-  width: 150px;
-  height: 150px;
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  padding-bottom: 2rem;
-  
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: left;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-/* .profile-img {
-  border-radius: 20rem;
-  width: 50%;
-  height: 50%;
-} */
-/* .profile{
-  border-radius: 20rem;
-  width: 50%;
-  height: 50%;
-} */
-
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-/* CONTACT */
-
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  
-  .main-div{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: 100vh;
-    
-    overflow: hidden;
-  }
-  
-  
-  .main-img{
-    object-fit: cover;
-    height: 100%;
-    
-  }
-
-}
-
-
-@media only screen and (max-width: 600px) {
-  .section__text {
-    align-self: center;
-    text-align: center;
-    justify-content: center;
-  }
-}
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body class="main">
+    <div class="main-div">
+      <img src="https://cdn.pixabay.com/photo/2017/02/21/15/51/modern-2086454_1280.png" class="main-img">
+    </div>
+
+    <nav id="desktop-nav">
+      <div class="logo">CODTRIX</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+   
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+
+      <div class="section__text">
+        
+        <h1 class="title">CODTRIX.</h1>
+        <p class="section__text__p1" style="color: aliceblue;">TECH SOLUTION</p>
+        
+        <div class="btn-container">
+          <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button> -->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/codtrixtechsolutions/codtrix/settings/pages'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title" style="color: aliceblue;"">About Us</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://img.freepik.com/free-vector/technology-company-logo-template_1061-20.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3 class="all-stuff">Experience</h3>
+              <p>1 year of<br />Frontend Development<br/>Backend Development<br>Designing </p></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 class="all-stuff">Education</h3>
+              <p>Gov. College Of Engineering Kannur</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Codtrix is a dynamic tech startup founded by four ambitious college students with a laser focus on delivering excellence in app development, website development, and cutting-edge design solutions. With a youthful, innovative spirit, Codtrix combines the energy and fresh ideas of its young founders to craft bespoke digital experiences. The company leverages its deep technical expertise and creative prowess to build user-centric mobile apps and websites that leave a lasting impression. Codtrix prides itself on staying at the forefront of technology trends, ensuring that every project they undertake is not only aesthetically captivating but also technically robust. As a team of passionate problem solvers, Codtrix is committed to pushing the boundaries of digital innovation and providing clients with tailored solutions that exceed their expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore Us</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article class="all-stuff">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">CSS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">React</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">JavaScript</h3>
+                  
+                </div>
+              </article>
+              <article class="all-stuff">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Svelthe</h3>
+                 
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Django</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Node JS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Express JS</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Flask</h3>
+                
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Firebase</h3>
+                 
+                </div>
+              </article>
+              <article class="all-stuff">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongodb</h3>
+                  
+                </div>
+              </article>
+              
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Designing</h2>
+            <div class="article-container">
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Figma</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Blender 3D</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Photoshop</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Illustrator</h3>
+                 
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">After Effects</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 class="all-stuff">Davinci</h3>
+                 
+                </div>
+              </article>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse Our Recent</p>
+      <h1 class="title">Currently Working On</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container2 color-container">
+            <div class="article-container">
+              <img
+                src="./assets/jjfds.jpg"
+                alt="Project 1"
+                class="imgset1"
+              />
+            </div>
+            <h4 class="experience-sub-title project-title">Brochure Designing For J&J FOODS</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container">
+              <img
+                src="./assets/jj.jpg"
+                alt="Project 2"
+                class="imgset1"
+              />
+            </div>
+            <h4 class="experience-sub-title project-title">Web Development For J&J FOODS</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container">
+              <img
+                src="https://i.ytimg.com/vi/R0aIKTulVe4/maxresdefault.jpg"
+                alt="Project 3"
+                class="imgset1"
+              />
+            </div>
+            <h4 class="experience-sub-title project-title">App Development For J&J FOODS</h4>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact" style="padding-left: 2px;">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Us</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/white-mail-icon-png-13.jpg"
+            alt="Email icon"
+            class="icon white-mail-icon-png-13.jpg"
+            
+          />
+          <p><a href="mailto:codetrix@gmail.com">codetrix@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD8/vz///+pqqmPkI/P0c9rbGspKik4ODheX17k5uTLzcujpaO2uLbp6+mTlJOEhYTv8e+goaBAQED2+PZ8fXx1dnVSU1KvsK8bGxvd391jZGMJCQm/wL8yMjKIiYgiIyJKS0oVFRVvb29XWFdDREOZm5l8QdwqAAAFHklEQVR4nO3da3eiMBAGYDN4txVUrJcWxdb6/3/iqqsFuWYiPUPS9/20e3Y3nWcRiZCMnU5xNoNbSv7c8hxOk5BumfSCoXQ9DWe4H59h6p7Lr7fLT+mqmssmSvMSpSddWFMJZjneHTnfSBfXRLb545cYlf3nYz8s912JL9IVPpl5pe9qtPtsnNQCLScuNYBnor0v1HctoMXElSbQ2hfqx1ZbqOhbulqT+PrAc6SrNciCBaSudL386Fwo0sSDdMHc8A6hjQeReQgVzaQrZubABNp3EE98YU+6Zl7GbKEi6ZpZGYRsoKJ36ao5GfEPoWWzU70PFRnhq3TVnPQMhHadiNyr4f9IV80JhBC2PxD+UaFVVwuT66Fdc5qj88IDH6hoIV01K85/euq88j8BR9I189LnC9+ka2aG+zKlsXTF3HAPIq2lK2aHexDtW2TDO4jkS9drkIhBpKl0tSbZKcbTtS/pao2y0wcupWs1zF73KfdEulLjeHorFbbSdT6RF53VJjYDz8TqJVHKvicyuSyq31GJAukKn8531ed9mjqxyLQblqxOJGXfZLQk/qxoBa1a2zcXLU+397BM+Pyb6M0l3yWrlzWp6zr2s/DkxdL1/FIO+yCwdYaGIAiCIAiCIAiCuJd+EPjT8T3TUxDspUtqLp/eSSnKR6nZ3M7nQ+lsRtG2YFt5cvOIelHX4p3J/cmsnJdSbpd9vQEXflc//qpyrDfGSMXHYBfV8xLlTGtD5FfBi7081U+5e4yRijY1fEaaugQ5rxeyHuTX7AlirASkUf6f78t6HlSNo+axLcL3gjvuWiOFNXtc2iKcmPkuQ9UsY2qH8Gjsuw42rVqL1grh+hnfZTSqmOy0QBgbLALNjVf+EF5eOKh9xK41YClRXOg/dQqmRhyXvKdKC3n9ACqHpOJHncLC5oClL1RZoe56LM1BC4miwthgnlY5ahFRUhg38i76MGzBdVFS2MB1MDdufnYjKHx2JlM4bn6Rr5xQv/UPJ/md2FLC1fBXgAUNA6SEr0YbyXVGzr6fCglVQ3O1opEzdzakhL8Z54WZg+igMLOD0EnhQ5lOCh/eTl0UPl4T3RSm1207KXzYReimML1Fy1FhakO2m8L0JdFVYfJh31VhspXQUWFq+u2qMLnot0z4sLDkqYF+nvG3R3hBkfdyyzyipz4lJ49N2yIkmvrZRszB1vyGanLTrR1CCk+FC1l2a8Zm+syQ9xOxDUKi00fZmBvP8LVKx/YIa/YYj8xujf/cyxAXUn2nBiPiz/+btLB6HcUtU5OB77MaYaFmMxEDYkuE2t2z+Q8a2yLUbTtl0C433LRASJpLRDs6XxSTG3wgL2T12rBSqKoX5D6G3V29BUJmC0bGV420RRjGLCH3TJQXcr+2ZsPsIC8vVNxvc2MeRHEhv30fc2mDvJAL7HR4L1NpoUlbJt4yP3GhQVsf3okoLjTYhvZhlzDmC3kzN3HhDkLLhTQzaZDGaUUqLjRqM8nqXX0/0x0WrpwXrp0XehBCCOFfFxr1tLVKaNQTlTenERYeK0cqCetrU6WFBfvx68PaowEhhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELYnLDmS6gghBBCCCGEEEIIIYQQQgghhBBCt4U754WdCaNaO4WsTlQQOiP8Ik78mp+vHd0u1+Y/ge6tNw5rTz/r6vu4+8zfHg7KYybsZn7CMq74EZt/K9ePpudlrmsAAAAASUVORK5CYII="
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+
+
+      
+
+      <section id="projects">
+     
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container3 color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/shit.jpg"
+                  alt="Project 1"
+                  class="imgset"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Anshif </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/anshiftp'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.linkedin.com/in/anshif-tp-169422248/'"
+                >
+                  Linkedin
+                </button>
+              </div>
+
+            </div>
+            <div class="details-container3 color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/nived.jpg"
+                  alt="Project 1"
+                  class="imgset"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Nived K P</h2>
+              
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Nivedkp01'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.linkedin.com/in/nived-kp-87733a261/'"
+                >
+                Linkedin
+                </button>
+              </div>
+
+            </div>
+            <div class="details-container3 color-container">
+              <div class="article-container">
+                <img class="imgset"
+                  src="./assets/sree.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Sreenand </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/sreenand-murali'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='http://www.linkedin.com/in/sreenand-murali-994389168'"
+                >
+                Linkedin
+                </button>
+              </div>
+           
+           
+            </div>
+            <div class="details-container3 color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/vyshak.jpg"
+                  alt="Project 3"
+                  class="imgset"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Vyshakh</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vyshakh01'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.linkedin.com/in/vyshakh-rajeevan-801984249/'"
+                >
+                Linkedin
+                </button>
+              </div>
+
+              </div>
+          
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+
+      <nav>
+        <div class="all-stuff">
+        <div class="nav-links-container">
+          <ul  class="nav-links">
+            <li><a class="all-stuff" href="#about" style="color: aliceblue;">About</a></li>
+            <li><a class="all-stuff" href="#experience" style="color: aliceblue;">Experience</a></li>
+            <li><a class="all-stuff" href="#projects"style="color: aliceblue;">Projects</a></li>
+            <li><a class="all-stuff" href="#contact"style="color: aliceblue;">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
